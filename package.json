@@ -5,11 +5,12 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/yurimachados/webpack.git"
   },
   "keywords": [],
   "author": "Yuri Machado",

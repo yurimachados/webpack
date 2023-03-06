@@ -12,6 +12,7 @@ module.exports = {
     },
     module: {
         rules:[
+            // SASS loader
             {
                 test:  /\.(sa|c|sc)ss$/, // REGEX
                 use: [
@@ -20,6 +21,7 @@ module.exports = {
                     'sass-loader',
             ]
             },
+            // CSS loader
             {
                 test:  /\.css$/i,
                 use: [
@@ -27,6 +29,7 @@ module.exports = {
                     'css-loader',
                 ]
             },
+            // JS/BABEL loader
             {
                 test: /\.js$/i,
                 exclude: /node_modules/,
@@ -37,6 +40,7 @@ module.exports = {
                     }
                 }
             },
+            // IMAGE loader
             {
                 test: /\.(jpeg|jpg|png|svg|gif)$/i,
                 use: {
